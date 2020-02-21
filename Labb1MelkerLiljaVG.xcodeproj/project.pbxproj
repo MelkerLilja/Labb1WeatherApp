@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F00707323F587AF00AFD29C /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F00707223F587AF00AFD29C /* WeatherAPI.swift */; };
+		6F00707523F5881F00AFD29C /* WeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F00707423F5881E00AFD29C /* WeatherInfo.swift */; };
+		6F0070C123F6D34000AFD29C /* citylist.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F0070C023F6D34000AFD29C /* citylist.json */; };
+		6F40F4FA23FEC57B001E4CFE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F40F4F923FEC57B001E4CFE /* HomeViewController.swift */; };
 		6F93CFEB23EC1703007BE001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F93CFEA23EC1703007BE001 /* AppDelegate.swift */; };
 		6F93CFED23EC1703007BE001 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F93CFEC23EC1703007BE001 /* SceneDelegate.swift */; };
 		6F93CFEF23EC1703007BE001 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F93CFEE23EC1703007BE001 /* ViewController.swift */; };
@@ -15,6 +19,7 @@
 		6F93CFF723EC1708007BE001 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F93CFF523EC1708007BE001 /* LaunchScreen.storyboard */; };
 		6F93D00223EC1708007BE001 /* Labb1MelkerLiljaVGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F93D00123EC1708007BE001 /* Labb1MelkerLiljaVGTests.swift */; };
 		6F93D00D23EC1708007BE001 /* Labb1MelkerLiljaVGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F93D00C23EC1708007BE001 /* Labb1MelkerLiljaVGUITests.swift */; };
+		6F93D01B23EC4B1A007BE001 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F93D01A23EC4B1A007BE001 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6F00707223F587AF00AFD29C /* WeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
+		6F00707423F5881E00AFD29C /* WeatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfo.swift; sourceTree = "<group>"; };
+		6F0070C023F6D34000AFD29C /* citylist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = citylist.json; sourceTree = "<group>"; };
+		6F40F4F923FEC57B001E4CFE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		6F93CFE723EC1703007BE001 /* Labb1MelkerLiljaVG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Labb1MelkerLiljaVG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F93CFEA23EC1703007BE001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F93CFEC23EC1703007BE001 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +58,7 @@
 		6F93D00823EC1708007BE001 /* Labb1MelkerLiljaVGUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Labb1MelkerLiljaVGUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F93D00C23EC1708007BE001 /* Labb1MelkerLiljaVGUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Labb1MelkerLiljaVGUITests.swift; sourceTree = "<group>"; };
 		6F93D00E23EC1708007BE001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F93D01A23EC4B1A007BE001 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,9 +112,14 @@
 				6F93CFEA23EC1703007BE001 /* AppDelegate.swift */,
 				6F93CFEC23EC1703007BE001 /* SceneDelegate.swift */,
 				6F93CFEE23EC1703007BE001 /* ViewController.swift */,
+				6F93D01A23EC4B1A007BE001 /* DetailViewController.swift */,
 				6F93CFF023EC1703007BE001 /* Main.storyboard */,
+				6F40F4F923FEC57B001E4CFE /* HomeViewController.swift */,
+				6F00707223F587AF00AFD29C /* WeatherAPI.swift */,
+				6F00707423F5881E00AFD29C /* WeatherInfo.swift */,
 				6F93CFF323EC1708007BE001 /* Assets.xcassets */,
 				6F93CFF523EC1708007BE001 /* LaunchScreen.storyboard */,
+				6F0070C023F6D34000AFD29C /* citylist.json */,
 				6F93CFF823EC1708007BE001 /* Info.plist */,
 			);
 			path = Labb1MelkerLiljaVG;
@@ -234,6 +249,7 @@
 			files = (
 				6F93CFF723EC1708007BE001 /* LaunchScreen.storyboard in Resources */,
 				6F93CFF423EC1708007BE001 /* Assets.xcassets in Resources */,
+				6F0070C123F6D34000AFD29C /* citylist.json in Resources */,
 				6F93CFF223EC1703007BE001 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,7 +277,11 @@
 			files = (
 				6F93CFEF23EC1703007BE001 /* ViewController.swift in Sources */,
 				6F93CFEB23EC1703007BE001 /* AppDelegate.swift in Sources */,
+				6F00707523F5881F00AFD29C /* WeatherInfo.swift in Sources */,
+				6F00707323F587AF00AFD29C /* WeatherAPI.swift in Sources */,
 				6F93CFED23EC1703007BE001 /* SceneDelegate.swift in Sources */,
+				6F40F4FA23FEC57B001E4CFE /* HomeViewController.swift in Sources */,
+				6F93D01B23EC4B1A007BE001 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
