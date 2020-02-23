@@ -10,25 +10,39 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var startBtn: UIButton!
+    @IBOutlet weak var titleView: UIView!
+    
+    var animator: UIDynamicAnimator!
+    var gravity: UIDynamicBehavior!
+    var collision : UICollisionBehavior!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        dynamics()
     }
     
     @IBAction func startBtnPressed(_ sender: Any) {
+        UIView.animate(withDuration: 1.0, animations: {
+        // Animera här
+            self.startBtn.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+        }) { (finished: Bool) in
+        // Körs när animationen är färdig
+        UIView.animate(withDuration: 1.0) {
+            self.startBtn.transform = CGAffineTransform(rotationAngle: CGFloat.pi * 2)
+            
+        }
+        }
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func dynamics() {
+        animator = UIDynamicAnimator(referenceView: titleView)
+        gravity = UIGravityBehavior(items: [titleLabel])
+        collision = UICollisionBehavior(items: [titleLabel])
+        collision.translatesReferenceBoundsIntoBoundary = true
+        animator.addBehavior(collision)
+        animator.addBehavior(gravity)
     }
-    */
-
+    
 }

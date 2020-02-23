@@ -33,9 +33,4 @@ extension Double {
     func toString() -> String {
         return String(format: "%.1f", self)
     }
-  /*  func toCelsius() -> Double{
-        let celsius = self - 273.15
-        return celsius
-    }
- */
 }
