@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_Labb1MelkerLiljaVG_Labb1MelkerLiljaVGUITests : NSObject
+@end
+@implementation PodsDummy_Pods_Labb1MelkerLiljaVG_Labb1MelkerLiljaVGUITests
+@end

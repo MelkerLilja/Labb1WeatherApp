@@ -30,8 +30,6 @@ struct WeatherAPI {
                 do {
                     let decoder = JSONDecoder()
                     let city: WeatherInfo = try decoder.decode(WeatherInfo.self, from: unwrappedData)
-                    print("City name: \(city.name)")
-                    print("City temp: \(city.main.temp)")
                     print(city.weather[0].description)
                     completion(.success(city))
                 } catch {
@@ -41,7 +39,6 @@ struct WeatherAPI {
         }
         // Starta task
         task.resume()
-        print("Task started")
     }
 }
 

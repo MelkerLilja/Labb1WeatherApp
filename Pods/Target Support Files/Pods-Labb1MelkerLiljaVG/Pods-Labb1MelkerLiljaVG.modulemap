@@ -1,0 +1,6 @@
+framework module Pods_Labb1MelkerLiljaVG {
+  umbrella header "Pods-Labb1MelkerLiljaVG-umbrella.h"
+
+  export *
+  module * { export * }
+}
